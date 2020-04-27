@@ -1,8 +1,10 @@
 let money = +prompt('Ваш бюджет на месяц?');
 let time = prompt('Введите дату и время в формате YYYY-MM-DD: ');
 
-let obligatioryExpenses = prompt('Введите обязательную статью расходов в этом месяце: ');
-let howMuch = prompt('Во сколько обойдется?');
+let obligatioryExpenses1 = prompt('Введите обязательную статью расходов в этом месяце: ');
+    howMuch1 = prompt('Во сколько обойдется?'),
+    obligatioryExpenses2 = prompt('Введите обязательную статью расходов в этом месяце: '),
+    howMuch2 = prompt('Во сколько обойдется?');
 
 let appData = {
 	budget: money,
@@ -14,6 +16,7 @@ let appData = {
 
 };
 
-appData.expenses[obligatioryExpenses] = howMuch;
+appData.expenses[obligatioryExpenses1] = howMuch1;
+appData.expenses[obligatioryExpenses2] = howMuch2;
 
 alert(appData.budget / 30);
