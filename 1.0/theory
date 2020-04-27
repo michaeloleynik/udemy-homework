@@ -1,0 +1,4 @@
+1) 8: numbers, strings, boolean, symbols, bigInt, objects, null, undefined
+2) Use console.log
+3) && - логическое "и", выполняется тогда, когда обе части являются true
+   || - логическое "или", выполняется тогда, когда хотя бы одна часть является true
