@@ -86,13 +86,13 @@ do {
 } while (i < 2);
 */
 
-function detectDayBudget() {
+function detectDayBudget() { // функция для расчёта бюджета на 1 день
   return appData.moneyPerDay = appData.budget / 30;
 }
 
 alert ("Бюджет на 1 день составляет " + detectDayBudget() + "руб.");
 
-function detectLevel() {
+function detectLevel() { // функция для расчёта уровня достатка
   if (appData.moneyPerDay < 100) {
       console.log ("Это минимальный уровень достатка!");
   } else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
@@ -106,7 +106,7 @@ function detectLevel() {
 
 detectLevel();
 
-function checkSavings() {
+function checkSavings() { // функция для расчёта накоплений под %
     if (appData.savings == true) {
       let save = +prompt("Какова сумма накоплений?"),
           percent = +prompt("Под какой процент?");
@@ -119,7 +119,7 @@ function checkSavings() {
 
 checkSavings();
 
-function chooseOptExpenses() {
+function chooseOptExpenses() { // функция для определения необязательных расходов
   for (let i = 1; i < 4; i++) {
     optExpenses = prompt('Статья необязательных расходов? ', '');
     appData.optionalExpenses[i] = optExpenses;
